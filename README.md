@@ -47,8 +47,8 @@ Siga os passos abaixo para configurar e executar o projeto localmente.
 
 1.  **Clone o repositório (se estiver no GitHub):**
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-    cd nome-do-repositorio
+    git clone [https://github.com/alifferleonn/API_youtue.git]
+    cd API_youtube
     ```
 
 2.  **Crie e ative um ambiente virtual (recomendado):**

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Títulos e Descrições para YouTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Títulos e Descrições para YouTube <span class="youtube-red">🚀</span></h1>
+
+        <form id="titleForm">
+            <div>
+                <label for="topic">Tema Principal do Vídeo:</label>
+                <input type="text" id="topic" name="topic" required placeholder="Ex: Receita de brigadeiro gourmet fácil">
+            </div>
+
+            <div>
+                <label for="keywords">Palavras-chave (separadas por vírgula):</label>
+                <input type="text" id="keywords" name="keywords" placeholder="Ex: brigadeiro, chocolate, fácil, rápido, sobremesa">
+            </div>
+
+            <div>
+                <label for="style">Estilo do Título:</label>
+                <select id="style" name="style">
+                    <option value="Clickbait">Clickbait (Chamativo)</option>
+                    <option value="Direto/Informativo" selected>Direto/Informativo</option>
+                    <option value="Curioso/Intrigante">Curioso/Intrigante</option>
+                    <option value="Lista/Numérico">Lista/Numérico (Ex: TOP 5)</option>
+                    <option value="Urgência/Exclusividade">Urgência/Exclusividade</option>
+                    <option value="Comparação">Comparação (Ex: X vs Y)</option>
+                    <option value="Problema/Solução">Problema/Solução</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="suggestions">Número de Sugestões (1-10):</label>
+                <input type="number" id="suggestions" name="suggestions" min="1" max="10" value="5" required>
+            </div>
+
+            <button type="submit" id="submitTitleButton">Gerar Títulos ✨</button>
+        </form>
+
+        <div id="results">
+            <h2>Sugestões de Títulos:</h2>
+            <div id="titleStatusMessage" class="status-message" style="display:none;"></div>
+            <ul id="titleList">
+            </ul>
+        </div>
+
+        <div id="descriptionSection" style="display:none;">
+            <h2>Descrição Gerada:</h2>
+            <div id="descriptionStatusMessage" class="status-message" style="display:none;"></div>
+            <div id="generatedDescription">
+            </div>
+            <button id="copyDescriptionButton" style="display:none; margin-top:15px; width:auto; background-color: #007bff;">Copiar Descrição</button>
+        </div>
+    </div>
+    <footer>
+        <p>Gerador Inteligente YouTube v1.1 - <span id="currentYear"></span></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
